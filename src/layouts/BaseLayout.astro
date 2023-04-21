@@ -1,4 +1,6 @@
 ---
+import Header from '@components/Header.astro'
+
 const { pageTitle } = Astro.props
 ---
 
@@ -10,7 +12,8 @@ const { pageTitle } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body class='min-h-screen grid place-content-center bg-radial-blue'>
+  <body class='min-h-screen bg-slate-50 dark:bg-black dark:text-white'>
+    <Header />
     <slot />
   </body>
 </html>
