@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'radial-blue': 'radial-gradient(lightyellow, skyblue)',
+      },
     },
   },
   plugins: [],

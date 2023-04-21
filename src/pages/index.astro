@@ -1,15 +1,15 @@
 ---
+import BaseLayout from '@layouts/BaseLayout.astro'
+
+const pageTitle = 'Home'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <div
+    class='bg-emerald-500 w-52 h-52 rounded-full shadow-2xl grid place-content-center'
+  >
+    <div class='bg-teal-200 w-32 h-32 rounded-full grid place-content-center'>
+      <div class='bg-red-500 w-16 h-16 rounded-full'></div>
+    </div>
+  </div>
+</BaseLayout>
