@@ -1,9 +1,19 @@
 ---
+import Contact from '@components/Contact.astro'
+import Hero from '@components/Hero.astro'
+import Rockets from '@components/Rockets.astro'
+import Testimonials from '@components/Testimonials.astro'
 import BaseLayout from '@layouts/BaseLayout.astro'
 
 const pageTitle = 'Home'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>{pageTitle}</h1>
+  <Hero />
+  <hr class='mx-auto bg-black dark:bg-white w-1/2' />
+  <Rockets />
+  <hr class='mx-auto bg-black dark:bg-white w-1/2' />
+  <Testimonials />
+  <hr class='mx-auto bg-black dark:bg-white w-1/2' />
+  <Contact />
 </BaseLayout>
