@@ -10,6 +10,10 @@ module.exports = {
       backgroundImage: {
         'radial-blue': 'radial-gradient(lightyellow, skyblue)',
       },
+      screens: {
+        widescreen: { raw: '(min-aspect-ratio: 3/2)' },
+        tallscreen: { raw: '(min-aspect-ratio: 1/2)' },
+      },
     },
   },
   plugins: [],
